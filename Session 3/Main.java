@@ -1,7 +1,7 @@
 public class Main {
-    static Animal inst_person = new Animal();
+    static Animal inst_animal = new Animal();
 
     public static void main(String[] args) {
-        inst_person.inputDataUser();
+        inst_animal.inputDataUser();
     }
 }

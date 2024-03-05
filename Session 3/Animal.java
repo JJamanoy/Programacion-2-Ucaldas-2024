@@ -19,5 +19,4 @@ public class Animal {
         nombre_perro = input.nextLine();
         input.nextLine();
     }
-
 }
