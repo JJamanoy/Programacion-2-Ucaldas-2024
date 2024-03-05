@@ -8,7 +8,7 @@ public class Exercise1 {
             suma = array[i] + suma;
         }
 
-        System.out.println("El resultado de la suma de los elementos del arreglo es de " + suma);
+        System.out.println("Este es el resultado de la suma de los elementos del arreglo es de " + suma);
 
     }
 }
