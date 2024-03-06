@@ -13,12 +13,11 @@ public class Exercise3 {
         linkedlist.add("200");
         linkedlist.add("100");
 
-        System.out.println("Del 0 al 4, mencione que elemento desea ver: ");
+        System.out.print("Del 0 al 4, mencione que elemento desea ver: ");
         int indice = input.nextInt();
 
         String elemento = linkedlist.get(indice);
 
-        System.out.println("El elemento de la posición " + indice + "es: " + elemento);
-
+        System.out.println("El elemento de la posición " + indice + " es: " + elemento);
     }
 }
