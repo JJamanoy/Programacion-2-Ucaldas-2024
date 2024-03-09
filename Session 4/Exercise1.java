@@ -5,7 +5,7 @@ public class Exercise1 {
         int suma = 0;
 
         for (int i = 0; i < array.length; i++) {
-            suma = array[i] + suma;
+            suma += array[i];
         }
 
         System.out.println("Este es el resultado de la suma de los elementos del arreglo es de " + suma);
