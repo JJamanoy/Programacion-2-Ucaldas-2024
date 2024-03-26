@@ -1,0 +1,5 @@
+Ramiro,47578,Ingenieria de Sistemas,4.0
+Camila,32432,Licenciatura,5.0
+Jorge,38962,Veterinaria,4.8
+Pablo,45678,Diseño Grafico,4.0
+Jeronimo,39875,Ingenieria Electrica,4.5
