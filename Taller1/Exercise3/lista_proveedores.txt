@@ -1,0 +1,10 @@
+Juan,5551234567,Calle 123
+María,5559876543,Avenida XYZ
+Pedro,5553214567,Plaza Principal
+Ana,5558765432,Calle Principal
+Luis,5552345678,Avenida Central
+Sofía,5557654321,Carretera 456
+Carlos,5555432167,Callejón 789
+Laura,5558765432,Av. de los Ángeles
+Diego,5556543219,Calle de las Flores
+Elena,5552345678,Paseo del Sol

@@ -1,0 +1,21 @@
+Arroz,Alimentos basicos,productos de la canasta familiar,3999.0,200
+Aceite de cocina,Alimentos basicos,productos de la canasta familiar,5999.0,100
+Papel higienico,Aseo,productos de limpieza e higiene personal,2999.0,150
+Pan,Alimentos basicos,productos de la canasta familiar,1999.0,120
+Detergente,Limpieza,productos de limpieza del hohar,4999.0,80
+Leche,Alimentos basicos,productos de la canasta familiar,2999.0,100
+Huevos,Alimentos basicos,productos de la canasta familiar,4999.0,50
+Jabon de bano,Aseo,productos del hogar e higiene personal,999.0,200
+Cafe,Alimentos basicos,productos de la canasta familiar,7999.0,80
+Pasta dental,Aseo,productos de limpieza e higiene personal,2499.0,150
+Galletas,Alimentos basicos,productos de la canasta familiar,1499.0,120
+Refresco,Alimentos basicos,productos de la canasta familiar,1999.0,100
+Papel toalla,Limpieza,productos de limpieza del hogar,3999.0,80
+Jabon en polvo,Limpieza,productos de limpieza del hogar,4499.0,100
+Cereal de desayuno,Alimentos basicos,productos de la canasta familiar,3499.0,70
+Lentejas,Alimentos basicos,productos de la canasta familiar,1999.0,120
+Shampoo,Aseo,productos de limpieza e higiene personal,3499.0,100
+Cuchillas de afeitar,Aseo,productos de limpieza e higiene personal,799.0,150
+Harina de trigo,Alimentos basicos,productos de la canasta familiar,2499.0,80
+Jabon liquido para manos,Aseo,productos de limpieza e higiene personal,1999.0,120
+Acondicionador,Aseo,productos de limpieza e higiene personal,20000.0,2000
