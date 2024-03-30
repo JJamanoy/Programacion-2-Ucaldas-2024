@@ -1,0 +1,15 @@
+Alejandra,Cardiologa,Especialista en el diagnostico y tratamiento de enfermedades del corazon,809805254158
+Ricardo,Neurologo,Especialista en el diagnostico y tratamiento de trastornos del sistema nervioso,809805254159
+Maria,Ginecologa,Especialista en la salud reproductiva de las mujeres,809805254160
+Juan,Ortopedista,Especialista en el tratamiento de lesiones y enfermedades del sistema musculoesquelético,809805254161
+Laura,Pediatra,Especialista en el cuidado de la salud de los niños,809805254162
+Carlos,Oftalmologo,Especialista en el diagnostico y tratamiento de enfermedades oculares,809805254163
+Luis,Endocrinologo,Especialista en trastornos hormonales y metabolismo,809805254165
+Gabriela,Dentista,Especialista en el cuidado dental y salud oral,809805254166
+Pedro,Neurologo,Especialista en el diagnostico y tratamiento de trastornos del sistema nervioso,809805254167
+Miguel,Cardiologo,Especialista en el diagnostico y tratamiento de enfermedades del corazon,809805254168
+Elena,Dermatologa,Especialista en enfermedades de la piel,809805254169
+Andrés,Cardiologo,Especialista en el diagnostico y tratamiento de enfermedades del corazon,809805254171
+Diego,Pediatra,Especialista en el cuidado de la salud de los niños,809805254173
+Julia,Pediatra,Especialista en el cuidado de la salud de los niños,809805254174
+Ignacio,Pediatra,Especialista en el cuidado de la salud de los niños,809805254175
