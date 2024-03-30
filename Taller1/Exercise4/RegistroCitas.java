@@ -317,7 +317,6 @@ public class RegistroCitas {
         int opcion = 0, opcion2 = 0;
 
         do {
-            System.out.println("SISTEMA DE INVENTARIO");
             System.out.println("1. Registros");
             System.out.println("2. Listar");
             System.out.println("3. Buscar");
