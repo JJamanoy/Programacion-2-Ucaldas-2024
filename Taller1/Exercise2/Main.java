@@ -3,6 +3,8 @@ public class Main {
 
     public static void main(String[] args) {
         instance_RegistroBiblioteca.leerArchivoTxt();
+        instance_RegistroBiblioteca.librosmayor();
         instance_RegistroBiblioteca.menuLibro();
+
     }
 }

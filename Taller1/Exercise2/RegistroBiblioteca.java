@@ -302,6 +302,24 @@ public class RegistroBiblioteca {
         return filtro;
     }
 
+    public static void librosmayor() {
+        int ejem_comparar = registro_libros.get(0).getEjemplares();
+        ArrayList<Libro> lista_libros_mayor = new ArrayList<>();
+        for (int i = 0; i < registro_libros.size(); i++) {
+            if (ejem_comparar < registro_libros.get(i).getEjemplares()) {
+                ejem_comparar = registro_libros.get(i).getEjemplares();
+            }
+        }
+
+        System.out.println("TITULOS CON MAYOR CANTIDAD");
+        for (int i = 0; i < registro_libros.size(); i++) {
+            if (ejem_comparar == registro_libros.get(i).getEjemplares()) {
+                System.out.println(registro_libros.get(i).getTitulo());
+            }
+        }
+
+    }
+
     /* Menú */
     public static void menuLibro() {
         int opcion = 0;

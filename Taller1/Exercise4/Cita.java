@@ -57,7 +57,7 @@ public class Cita {
 
     @Override
     public String toString() {
-        return "Paciente: " + paciente + "   Medico: " + medico + "   Fechac cita: " + fechacCita + "  Hora:"
+        return paciente + "   " + medico + "   Fechac cita: " + fechacCita + "  Hora:"
                 + HoraCita + "   Estado: " + estado;
     }
 

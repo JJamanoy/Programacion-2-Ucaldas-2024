@@ -4,6 +4,9 @@ public class Main {
     public static void main(String[] args) {
         instance_RegistroCitas.leerArchivoTxt();
         instance_RegistroCitas.leerArchivoTxt2();
+        instance_RegistroCitas.crearCitastxt();
+        instance_RegistroCitas.citasDoctor();
+        instance_RegistroCitas.mostrarCitasDoctor();
         instance_RegistroCitas.menuPrincipal();
     }
 }

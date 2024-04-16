@@ -12,6 +12,7 @@ public class RegistroCitas {
     static ArrayList<Especialidad> lista_especialidad = new ArrayList<>();
     static ArrayList<Cita> lista_citas = new ArrayList<>();
     static ArrayList<Cita> citasFiltradas = new ArrayList<>();
+    static ArrayList<Cita> lista_citas_doctor = new ArrayList<>();
     static Scanner sc = new Scanner(System.in);
 
     /* Leer Archivo txt (Pacientes) */
@@ -53,6 +54,60 @@ public class RegistroCitas {
             }
         } catch (IOException e) {
             System.out.println("Error al leer el archivo: " + e.getMessage());
+        }
+    }
+
+    public static void crearCitastxt() {
+        Paciente paciente1 = lista_pacientes.get(1);
+        Medico medico1 = lista_medicos.get(1);
+        Date fecha1 = new Date(124, 4, 15);
+        String horaCita1 = "10.00";
+        String estado1 = "Pendiente";
+        Cita cita1 = new Cita(paciente1, medico1, fecha1, horaCita1, estado1);
+        lista_citas.add(cita1);
+
+        Paciente paciente2 = lista_pacientes.get(3);
+        Medico medico2 = lista_medicos.get(1);
+        Date fecha2 = new Date(124, 4, 15);
+        String horaCita2 = "9.00";
+        String estado2 = "Confirmada";
+        Cita cita2 = new Cita(paciente2, medico2, fecha2, horaCita2, estado2);
+        lista_citas.add(cita2);
+
+        Paciente paciente3 = lista_pacientes.get(7);
+        Medico medico3 = lista_medicos.get(1);
+        Date fecha = new Date(124, 4, 15);
+        String horaCita3 = "15.00";
+        String estado3 = "Pendiente";
+        Cita cita3 = new Cita(paciente3, medico3, fecha, horaCita3, estado3);
+        lista_citas.add(cita3);
+    }
+
+    public static void citasDoctor() {
+        Double hora = 0.0;
+        String hora_String = "";
+        String codigo_doctor = "809805254159";
+        Date fecha_doctor = new Date(124, 4, 15);
+        System.out.println("Estas son las citas del doctor Ricardo en la mañana el dia 15");
+
+        for (int i = 0; i < lista_citas.size(); i++) {
+            if (codigo_doctor.equals(lista_citas.get(i).getMedico().getCodigoMedico())) {
+                if ((fecha_doctor.compareTo(lista_citas.get(i).getFechacCita())) == 0) {
+                    hora_String = lista_citas.get(i).getHoraCita();
+                    hora = Double.parseDouble(hora_String);
+
+                    if (hora < 12.0 && hora > 8.0) {
+                        lista_citas_doctor.add(lista_citas.get(i));
+                    }
+                }
+            }
+        }
+
+    }
+
+    public static void mostrarCitasDoctor() {
+        for (Cita cita : lista_citas_doctor) {
+            System.out.println(cita);
         }
     }
 

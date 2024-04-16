@@ -3,7 +3,7 @@ Aceite de cocina,Alimentos basicos,productos de la canasta familiar,5999.0,100
 Papel higienico,Aseo,productos de limpieza e higiene personal,2999.0,150
 Pan,Alimentos basicos,productos de la canasta familiar,1999.0,120
 Detergente,Limpieza,productos de limpieza del hohar,4999.0,80
-Leche,Alimentos basicos,productos de la canasta familiar,2999.0,100
+Leche,Alimentos basicos,productos de la canasta familiar,2999.0,10
 Huevos,Alimentos basicos,productos de la canasta familiar,4999.0,50
 Jabon de bano,Aseo,productos del hogar e higiene personal,999.0,200
 Cafe,Alimentos basicos,productos de la canasta familiar,7999.0,80

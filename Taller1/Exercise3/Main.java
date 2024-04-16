@@ -4,6 +4,8 @@ public class Main {
 
         instance_RegistroInventario.leerArchivoTxt();
         instance_RegistroInventario.leerArchivoTxt2();
+        instance_RegistroInventario.ProductoMenor();
         instance_RegistroInventario.menuProducto();
+
     }
 }

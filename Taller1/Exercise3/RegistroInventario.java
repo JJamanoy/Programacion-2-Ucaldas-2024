@@ -259,6 +259,21 @@ public class RegistroInventario {
         return venta;
     }
 
+    /* Producto con menor stock */
+    public static void ProductoMenor() {
+        int pro_menor = lista_productos.get(0).getStock();
+        String pro_nombre = lista_productos.get(0).getNombre();
+
+        for (int i = 0; i < lista_productos.size(); i++) {
+            if (lista_productos.get(i).getStock() < pro_menor) {
+                pro_menor = lista_productos.get(i).getStock();
+                pro_nombre = lista_productos.get(i).getNombre();
+            }
+        }
+
+        System.out.println("El producto con menor cantidad de unidades es " + pro_nombre + " con " + pro_menor);
+    }
+
     /* Menú */
     // Menú principal del sistema
     public static void menuProducto() {

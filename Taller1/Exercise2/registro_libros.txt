@@ -9,3 +9,6 @@ Crimen y castigo,Fyodor Dostoevsky,Rusia,978-84-376-0600-8,Drama,4500
 Los miserables,Victor Hugo,Francia,978-84-376-0199-1,Epica,5000
 Harry Potter y la piedra filosofal,J.K. Rowling,Reino Unido,978-84-376-0154-0,Fantasia,10000
 La hojarasca,Gabriel Garcia Marquez,Colombia,978-85-281-0328-2,Historica,10000
+La patria,La patria SA,Colombia,7519538646,Periodico,200000
+Programacion,Jeronimo,Colombia,787879845655,Informativo,200000
+Qhubo,Qhubo SA,Colombia,53649101606440,Periodico,200000
