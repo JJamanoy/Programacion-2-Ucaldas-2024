@@ -1,0 +1,11 @@
+El Aleph,Jorge Luis Borges,Argentina,978-84-376-0494-7,Ficcion,5000
+Cien años de soledad,Gabriel Garcia Marquez,Colombia,978-3-16-148410-0,Realismo Magico,7500
+Orgullo y prejuicio,Jane Austen,Reino Unido,978-84-376-0289-9,Romance,6000
+1984,George Orwell,Reino Unido,978-88-452-3183-0,Ciencia Ficcion,8000
+Moby Dick,Herman Melville,Estados Unidos,978-84-376-0162-5,Aventura,4000
+La metamorfosis,Franz Kafka,República Checa,978-84-376-0604-6,Fantasia,5500
+Don Quijote de la Mancha,Miguel de Cervantes,Spain,978-84-376-0187-8,Clásico,7000
+Crimen y castigo,Fyodor Dostoevsky,Rusia,978-84-376-0600-8,Drama,4500
+Los miserables,Victor Hugo,Francia,978-84-376-0199-1,Epica,5000
+Harry Potter y la piedra filosofal,J.K. Rowling,Reino Unido,978-84-376-0154-0,Fantasia,10000
+La hojarasca,Gabriel Garcia Marquez,Colombia,978-85-281-0328-2,Historica,10000
