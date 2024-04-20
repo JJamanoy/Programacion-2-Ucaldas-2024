@@ -1,0 +1,5 @@
+Programacion 1,5,Jero,3212323,jero@gmail.com
+Programacion Orientada a Objetos,4,Lucas,9876543,lucas@example.com
+Estructuras De Datos,5,Alex,5554321,alex@domain.com
+Desarrollo Web,6,Marta,1234567,marta@example.org
+Algoritmos Avanzados,4,Pablo,4443332,pablo@site.com

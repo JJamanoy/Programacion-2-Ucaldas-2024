@@ -1,0 +1,5 @@
+Calculo Integral,5,Ana,1112222,ana@example.com
+Algebra Lineal,4,Carlos,3334444,carlos@example.org
+Ecuaciones Diferenciales,5,Laura,5556666,laura@example.com
+Geometria Diferencial,6,Miguel,7778888,miguel@example.org
+Analisis Complejo,5,Sofia,9990000,sofia@example.com

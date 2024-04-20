@@ -1,0 +1,5 @@
+Mecanica Clasica,5,Albert,1112222,albert@example.com
+Electromagnetismo,4,Marie,3334444,marie@example.org
+Termodinamica,5,Isaac,5556666,isaac@example.com
+Mecanica Cuantica,6,Richard,7778888,richard@example.org
+Fisica De Particulas,4,Stephen,9990000,stephen@example.com
