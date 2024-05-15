@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar Lenguaje</title>
+</head>
+<body>
+    <div class="container">
+        <h3> Lista de Lenguajes de Programación que se llamen Java </h3>
+        <table border="2">
+            <tr>
+                <th> Lenguaje </th>
+                <th> Tipo Paradigma </th>
+                <th> Frameworks </th>
+            </tr>
+            <tr th:each="lenguaje_x: ${MostrarLenguajeAttribute}">
+                <td th:text="${lenguaje_x.lenguaje}"></td>
+                <td th:text="${lenguaje_x.tipo_paradigma}"></td>
+                <td th:text="${lenguaje_x.frameworks}"></td>
+            </tr>       
+        </table>
+    </div>
+</body>
+</html>

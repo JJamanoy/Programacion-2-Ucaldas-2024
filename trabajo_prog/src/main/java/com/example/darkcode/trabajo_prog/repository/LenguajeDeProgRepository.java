@@ -1,4 +1,4 @@
-package com.example.darkcode.app.repository;
+package com.example.darkcode.trabajo_prog.repository;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -8,14 +8,16 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="TBL_EMPLOYEES")
-public class EmployeeRepository {
+@Table(name="TBL_LENGUAJEPROG")
+public class LenguajeDeProgRepository {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name="id")
     private Long id;
-    @Column(name="fullname")
-    private Long fullname;
-    @Column(name="user_email")
-    private Long user_Email;
-}   
+    @Column(name="lenguaje")
+    private String lenguaje;
+    @Column(name="tipo_paradigma")
+    private String tipo_paradigma;
+    @Column(name="frameworks")
+    private String frameworks;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar Vehiculos</title>
+</head>
+<body>
+    <div class="container">
+        <h3> Lista de Vehiculos encontrados por tipo de vehiculo: Carro </h3>
+        <table border="2">
+            <tr>
+                <th> Tipo Vehiculo </th>
+                <th> Marca </th>
+                <th> Modelo </th>
+                <th> Color </th>
+            </tr>
+            <tr th:each="vehiculo: ${vehiculeMostrarAttribute}">
+                <td th:text="${vehiculo.tipo_vehiculo}"></td>
+                <td th:text="${vehiculo.marca}"></td>
+                <td th:text="${vehiculo.modelo}"></td>
+                <td th:text="${vehiculo.color}"></td>
+            </tr>
+            
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h3> Lista de Empleados </h3>
+        <table border="2">
+            <tr>
+                <th> Empleado </th>
+                <th> Correo</th>
+            </tr>
+            <tr th:each="employee: ${employeeAtributtes}">
+                <td th:text="${employee.fullname}"></td>
+                <td th:text="${employee.user_email}"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
