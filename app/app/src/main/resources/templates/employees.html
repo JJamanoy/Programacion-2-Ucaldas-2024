@@ -8,15 +8,19 @@
 <body>
     <div class="container">
         <h3> Lista de Empleados </h3>
-        <table border="2">
-            <tr>
-                <th> Empleado </th>
-                <th> Correo</th>
-            </tr>
-            <tr th:each="employee: ${employeeAtributtes}">
-                <td th:text="${employee.fullname}"></td>
-                <td th:text="${employee.user_email}"></td>
-            </tr>
+        <table border="3">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="employee: ${employeeListAttribute}">
+                    <td th:text="${employee.fullname}"></td>
+                    <td th:text="${employee.user_email}"></td>
+                </tr>
+            </tbody>
         </table>
     </div>
 </body>

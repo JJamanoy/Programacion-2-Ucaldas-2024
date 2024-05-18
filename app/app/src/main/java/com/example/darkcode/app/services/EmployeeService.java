@@ -5,8 +5,8 @@ import java.util.List;
 import com.example.darkcode.app.domain.Employee;
 
 public interface EmployeeService {
-    public List<Employee> listaEmpleados();
-    public void GuardarEmpleado(Employee employee);
-    public void EliminarEmpleado(Employee employee);
-    public Employee mostrarEmpleado(Employee employee);
+    List<Employee> listaEmpleados();
+    void GuardarEmpleado(Employee employee);
+    void EliminarEmpleado(Employee employee);
+    Employee mostrarEmpleado(Long id);
 }

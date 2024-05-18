@@ -4,9 +4,15 @@ import lombok.Data;
 
 @Data
 public class Employee {
+    private Long id;
     private String fullname;
     private String user_email;
 
+    public Employee(){}
+
+    public Long getId(){
+        return id;
+    }
     public void setFullname(String fullname){
         this.fullname = fullname;
     }

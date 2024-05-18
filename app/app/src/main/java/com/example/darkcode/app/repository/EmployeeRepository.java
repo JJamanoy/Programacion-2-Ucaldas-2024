@@ -15,7 +15,7 @@ public class EmployeeRepository {
     @Column(name="id")
     private Long id;
     @Column(name="fullname")
-    private Long fullname;
+    private String fullname;
     @Column(name="user_email")
-    private Long user_Email;
-}   
+    private String user_email;
+}

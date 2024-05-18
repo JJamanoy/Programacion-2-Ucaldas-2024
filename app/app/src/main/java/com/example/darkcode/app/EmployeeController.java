@@ -1,56 +1,63 @@
 package com.example.darkcode.app;
 
-import java.util.ArrayList;
-
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import com.example.darkcode.app.domain.Employee;
+import com.example.darkcode.app.services.EmployeeService;
 
 
 
 @Controller
 public class EmployeeController {
+
+    @Autowired
+    private EmployeeService employeeService;
+
     @GetMapping("/")
-    public String home(){
+    public String home() {
         return "home";
     }
 
     @GetMapping("/contact")
-    public String contact(){
+    public String contact() {
         return "contact";
     }
 
     @GetMapping("/saludo")
-    public String saludo(Model model){
+    public String saludo(Model model) {
         model.addAttribute("mensaje", "Hola desde vista");
         return "saludo";
     }
 
     @GetMapping("/employee")
-    public String informacionEmpleado(Model model){
+    public String informacionEmpleado(Model model) {
         Employee empleado = new Employee();
-        empleado.setFullname("Jeronimo Jamanoy");
-        empleado.setUser_email("Jerojamanoy@gmail.com");
+        empleado.setFullname("yaneth mejia");
+        empleado.setUser_email("yanethmejia@gmail.com");
         model.addAttribute("employeeAtributtes", empleado);
         return "show_employee";
     }
 
     @GetMapping("/employees")
-    public String listarEmpleado(Model model){
-        Employee empleado1 = new Employee();
-        Employee empleado2 = new Employee();
-        empleado1.setFullname("Juan Felipe");
-        empleado1.setUser_email("juanfelipe@gmail.com");
-        empleado2.setFullname("Juan ");
-        empleado2.setUser_email("juan@gmail.com");
-
-        ArrayList<Employee> empleados = new ArrayList<>();
-        empleados.add(empleado1);
-        empleados.add(empleado2);
-        model.addAttribute("employeeAtributtes", empleados);
+    public String listarEmpleados(Model model) {
+        model.addAttribute("employeeListAttribute", employeeService.listaEmpleados());
         return "employees";
+    }
 
+    @GetMapping("/new-employee")
+    public String showAddEmployee(Model model){
+        model.addAttribute("employee", new Employee());
+        return "add_employee";
+    }
+
+    @PostMapping("/new-employee")
+    public String GuardarEmpleado(@ModelAttribute("employee") Employee employee) {
+        employeeService.GuardarEmpleado(employee);
+        return "redirect:/employees";
     }
 }

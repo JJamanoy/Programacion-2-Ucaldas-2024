@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Nuevo empleado</h3>
+    <form th:action="@{/new-employee}" th:object ="${employee}" method="post">
+        <div>
+            <label for="fullname">Nombre:</label>
+            <input type="text" id="fullname" th:field="*{fullname}" />
+        </div>
+        <div>
+            <label for="user_email">Email:</label>
+            <input type="email" id="user_email" th:field="*{user_email}" />
+        </div>
+        <button type="submit">Guardar</button>
+    </form>
+</body>
+</html>
