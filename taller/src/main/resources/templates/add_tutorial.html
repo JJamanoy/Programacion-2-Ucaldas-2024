@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> Nuevo Tutorial </h3>
+    <form th:action="@{/new-tutorial}" th:object="${tutorial}" method="post">
+        <div>
+            <label for="name"> Nombre: </label>
+            <input type="text" id="name" th:field="*{name}"/>
+        </div>
+        <div>
+            <label for="descripcion"> Descripcion: </label>
+            <input type="text" id="descripcion" th:field="*{descripcion}"/>
+        </div>
+        <div>
+            <label for="url"> Url: </label>
+            <input type="text" id="url" th:field="*{url}"/>
+        </div>
+        <div>
+            <label for="fecha"> Fecha: </label>
+            <input type="text" id="fecha" th:field="*{fecha}"/>
+        </div>
+        <div>
+            <label for="autor"> autor: </label>
+            <input type="text" id="autor" th:field="*{autor}"/>
+        </div>
+        <div>
+            <label for="estado"> estado: </label>
+            <input type="text" id="estado" th:field="*{estado}"/>
+        </div>
+        <button type="submit">Guardar</button>
+    </form>
+</body>
+</html>
