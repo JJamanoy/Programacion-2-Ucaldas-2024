@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.example.darkcode.app.domain.Employee;
@@ -58,6 +59,19 @@ public class EmployeeController {
     @PostMapping("/new-employee")
     public String GuardarEmpleado(@ModelAttribute("employee") Employee employee) {
         employeeService.GuardarEmpleado(employee);
+        return "redirect:/employees";
+    }
+
+    @GetMapping("/editEmployee/{id}")
+    public String showEditEmployeeForm(@PathVariable Long id, Model model){
+        Employee employee = employeeService.buscarEmpleado(id);
+        model.addAttribute("employee", employee);
+        return "edit_employee";
+    }
+
+    @PostMapping("/editEmployee")
+    public String processEditForm(@ModelAttribute Employee employee){
+        employeeService.GuardarEdicionEmpleado(employee);
         return "redirect:/employees";
     }
 }
