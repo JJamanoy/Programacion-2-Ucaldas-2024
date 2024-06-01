@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.taller.taller.domain.Tutorial;
@@ -39,9 +40,9 @@ public class TutorialController {
         return "redirect:/tutoriales";
     }
 
-    @GetMapping("/showTutorial/{id}")
-    public String showTutorial(){
+    @GetMapping("/showTutorial/{name}")
+    public String showTutorial(@PathVariable("name") String name, Model model){
+        model.addAttribute("tutorial", tutorialService.mostrarTutorial(name));
         return "vista";
     }
-
 }

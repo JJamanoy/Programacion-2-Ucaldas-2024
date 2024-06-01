@@ -23,8 +23,8 @@ public class TutorialServiceImp implements TutorialService{
     }
 
     @Override
-    public Tutorial mostrarTutorial(Long id){
-        return tutoriales.stream().filter(tutorial -> tutorial.getId().equals(id))
+    public Tutorial mostrarTutorial(String name){
+        return tutoriales.stream().filter(tutorial -> tutorial.getName().equals(name))
                 .findFirst()
                 .orElse(null);
     }

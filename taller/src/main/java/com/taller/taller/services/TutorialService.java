@@ -7,5 +7,5 @@ import com.taller.taller.domain.Tutorial;
 public interface TutorialService {
     ArrayList<Tutorial> listaTutoriales();
     void GuardarTutorial(Tutorial tutorial);
-    Tutorial mostrarTutorial (Long id);
+    Tutorial mostrarTutorial (String name);
 }

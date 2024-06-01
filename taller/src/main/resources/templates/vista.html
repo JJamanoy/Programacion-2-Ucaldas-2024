@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Detalle del Tutorial</title>
 </head>
 <body>
-    <h3>Me falto hacer el enlace</h3>
+    <div class="container">
+        <h1>Detalle del Tutorial</h1>
+        <h3><strong>ID:</strong> <span th:text="${tutorial.id}"></span></h3>
+        <h3><strong>Nombre:</strong> <span th:text="${tutorial.name}"></span></h3>
+        <h3><strong>Descripción:</strong> <span th:text="${tutorial.descripcion}"></span></h3>
+        <h3><strong>URL:</strong> <span th:text="${tutorial.url}"></span></h3>
+        <h3><strong>Fecha:</strong> <span th:text="${tutorial.fecha}"></span></h3>
+        <h3><strong>Autor:</strong> <span th:text="${tutorial.autor}"></span></h3>
+        <h3><strong>Estado:</strong> <span th:text="${tutorial.estado}"></span></h3>
+    </div>
 </body>
 </html>

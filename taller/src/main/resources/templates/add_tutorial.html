@@ -18,19 +18,19 @@
         </div>
         <div>
             <label for="url"> Url: </label>
-            <input type="text" id="url" th:field="*{url}"/>
+            <input type="url" id="url" th:field="*{url}"/>
         </div>
         <div>
             <label for="fecha"> Fecha: </label>
-            <input type="text" id="fecha" th:field="*{fecha}"/>
+            <input type="date" id="fecha" th:field="*{fecha}"/>
         </div>
         <div>
             <label for="autor"> autor: </label>
             <input type="text" id="autor" th:field="*{autor}"/>
         </div>
         <div>
-            <label for="estado"> estado: </label>
-            <input type="text" id="estado" th:field="*{estado}"/>
+            <label for="estado"> Estado: </label>
+            <input type="checkbox" id="estado" th:field="*{estado}"/>
         </div>
         <button type="submit">Guardar</button>
     </form>

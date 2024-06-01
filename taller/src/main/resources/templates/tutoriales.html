@@ -11,16 +11,19 @@
         <table border="2">
             <thead>
                 <tr>
+                    <th>Id</th>
                     <th>Nombre</th>
                     <th>Descripcion</th>
                     <th>URL</th>
                     <th>Fecha</th>
                     <th>Autor</th>
                     <th>Estado</th>
+                    <th>Acciones</th>
                 </tr>
             </thead>
             <tbody>
-                <tr th:each="tutorial: ${tutorialListAttribute}">
+                <tr th:each="tutorial : ${tutorialListAttribute}">
+                    <td th:text="${tutorial.id}"></td>
                     <td th:text="${tutorial.name}"></td>
                     <td th:text="${tutorial.descripcion}"></td>
                     <td th:text="${tutorial.url}"></td>
@@ -28,7 +31,7 @@
                     <td th:text="${tutorial.autor}"></td>
                     <td th:text="${tutorial.estado}"></td>
                     <td>
-                        <a th:href="@{'/showTutorial/' + ${tutorial.id}}" target="_blank">Ver en detalle</a>
+                        <a th:href="@{'/showTutorial/' + ${tutorial.name}}" target="_blank">Ver en detalle</a>
                     </td>
                 </tr>
             </tbody>
@@ -36,3 +39,4 @@
     </div>
 </body>
 </html>
+

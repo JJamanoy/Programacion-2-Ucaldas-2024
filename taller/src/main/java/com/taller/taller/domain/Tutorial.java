@@ -14,6 +14,9 @@ public class Tutorial {
 
     public Tutorial(){}
 
+    public Long getId(){
+        return id;
+    }
     public String getName(){
         return name;
     }
@@ -51,6 +54,9 @@ public class Tutorial {
     }
     public void setEstado(Boolean estado){
         this.estado=estado;
+    }
+    public void setId(Long id){
+        this.id = id;
     }
 }
 
