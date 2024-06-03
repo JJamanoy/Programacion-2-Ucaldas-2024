@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir Programa</title>
+</head>
+<body>
+    <h3> Nuevo Programa </h3>
+    <form th:action="@{/new-programa}" th:object="${programa}" method="post">
+        <div>
+            <label for="name"> Nombre: </label>
+            <input type="text" id="name" th:field="*{name}"/>
+        </div>
+        <div>
+            <label for="level_study"> Nivel de estudio: </label>
+            <input type="text" id="level_study" th:field="*{level_study}"/>
+        </div>
+        <div>
+            <label for="Creditos"> Creditos: </label>
+            <input type="number" id="credits" th:field="*{credits}"/>
+        </div>
+        <div>
+            <label for="estado"> Estado: </label>
+            <input type="checkbox" id="status" th:field="*{status}"/>
+        </div>
+        <button type="submit">Guardar</button>
+    </form>
+</body>
+</html>

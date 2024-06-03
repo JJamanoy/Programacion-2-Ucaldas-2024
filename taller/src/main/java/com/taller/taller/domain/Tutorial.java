@@ -32,7 +32,6 @@ public class Tutorial {
     public String getAutor(){
         return autor;
     }
-
     public Boolean getEstado(){
         return estado;
     }

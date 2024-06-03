@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programas</title>
+</head>
+<body>
+    <div class="container">
+        <h3> Lista de Programas </h3>
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>Nombre del Programa</th>
+                    <th>Nivel de estudio</th>
+                    <th>Creditos</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="programa : ${programaListAttribute}">
+                    <td th:text="${programa.name}"></td>
+                    <td th:text="${programa.level_study}"></td>
+                    <td th:text="${programa.credits}"></td>
+                    <td thtext="${programa.status}"></td>
+                    <td>
+                        <a th:href="@{'/showPrograma/' + ${programa.name}}" target="_blank">Ver en detalle</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

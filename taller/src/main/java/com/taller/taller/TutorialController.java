@@ -17,11 +17,6 @@ public class TutorialController {
     @Autowired
     private TutorialService tutorialService;
 
-    @GetMapping("/")
-    public String Home(){
-        return "home";
-    }
-
     @GetMapping("/tutoriales")
     public String listaTutoriales(Model model){
         model.addAttribute("tutorialListAttribute", tutorialService.listaTutoriales());
