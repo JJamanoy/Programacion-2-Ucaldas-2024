@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Libros</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h3> Lista de Libros </h3>
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Autor</th>
+                    <th>Genero</th>
+                    <th>Fecha de publicación</th>
+                    <th>ISBN</th>
+                    <th>Cantidad Disponible</th>
+                    <th>Descripción</th>
+                    <th>Imagen Portada</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="libros : ${librosListAttribute}">
+                    <td th:text="${libros.titulo}"></td>
+                    <td th:text="${libros.autor}"></td>
+                    <td th:text="${libros.genero}"></td>
+                    <td th:text="${libros.fecha_publicacion}"></td>
+                    <td th:text="${libros.isbn}"></td>
+                    <td th:text="${libros.cantidad_disponible}"></td>
+                    <td th:text="${libros.descripcion}"></td>
+                    <td th:text="${libros.imagen_portada}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
